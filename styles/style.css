@@ -9,7 +9,7 @@
     --page-background-image,
     url(../images/cover-image.png)
   );
-  background-color: var(--color-black-1, #000028);
+  background-color: var(--page-background-color, #000028);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -123,6 +123,7 @@
   text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
 }
 
+
 .header-text {
   display: flex;
   flex-direction: column;
@@ -137,7 +138,7 @@
   line-height: 129.53px;
   margin-inline-start: -20px;
   color: var(--title-color, #db00ff);
-  text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
+  text-shadow: 4px 4px 0 var(--color-purple-2, #ff0070);
 }
 
 .header-subtitle {
