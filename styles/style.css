@@ -283,7 +283,7 @@
   grid-area: books;
 }
 
-.section:last-child .title__decor {
+.section__gallery .title__decor {
   grid-area: title;
 }
 
@@ -407,4 +407,4 @@
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 }
-/* Закончить код  */
+
