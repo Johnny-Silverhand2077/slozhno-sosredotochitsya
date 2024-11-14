@@ -18,7 +18,8 @@
 .header {
   display: grid;
   align-items: start;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 668px;
   padding: 20px;
 }
 
@@ -108,7 +109,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--secondary-color, #ff0070);
+  outline: 1px solid var(--secondary-color-o-40, #ff007066);
 }
 
 .header__theme-menu-button:focus {
@@ -166,12 +167,20 @@
   background-color: var(--accent-color, #ff0070);
 }
 
+.article__title {
+  color: var(--highlight-color, #000028);
+  font-size: var(--main-font-size, 18px);
+  line-height: 23.4px;
+  background-color: var(--accent-color, #ff0070);
+  font-weight: 400;
+}
+
 .link {
   text-decoration: none;
 }
 
 .link:hover {
-  border-block-end: 1px solid var(--text-color #f1b2ce);
+  border-block-end: 1px solid var(--text-color, #f1b2ce);
 }
 
 .link:focus {
@@ -195,34 +204,34 @@
   column-gap: 20px;
 }
 
-.section:first-child {
+.section__why {
   grid-template-columns: 315px 1fr;
 }
 
-.section:first-child .title {
+.section__why .title {
   grid-row: span 2;
 }
 
-.section:nth-child(2) {
+.section__what {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-.section:nth-child(2) .article-list {
+.section__what .article-list {
   grid-column: span 3;
   grid-template-columns: repeat(3, 1fr);
 }
 
-.section:nth-child(2) .title {
+.section__what .title {
   grid-column: span 3;
   width: 30%;
 }
 
-.section:nth-child(3) {
+.section__how {
   grid-template-columns: 315px 1fr;
 }
 
-.section:last-child {
+.section__gallery {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto auto auto auto;
   grid-template-areas:
@@ -282,7 +291,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 668px;
   padding: 20px;
 }
 
@@ -320,12 +330,12 @@
     gap: 145px;
   }
 
-  .section:first-child,
-  .section:nth-child(3) {
+  .section__why,
+  .section__how {
     grid-template-columns: 236px 1fr;
   }
 
-  .section:nth-child(2) .article-list {
+  .section__what .article-list {
     grid-template-columns: 1fr;
   }
 }
@@ -372,22 +382,22 @@
     gap: 50px;
   }
 
-  .section:first-child,
-  .section:nth-child(3) {
+  .section__why,
+  .section__how {
     grid-template-columns: 1fr;
     row-gap: 20px;
   }
 
-  .section:nth-child(2) {
+  .section__what {
     width: 100%;
     row-gap: 20px;
   }
 
-  .section:nth-child(2) .title {
+  .section__what .title {
     width: 100%;
   }
 
-  .section:last-child {
+  .section__gallery {
     display: flex;
     flex-direction: column;
     gap: 10px;

@@ -8,6 +8,7 @@
   --text-color: var(--color-black-2, #353430);
   --title-color: var(--color-pink-4, #ffc2e6);
   --secondary-color: var(--color-black-2, #353430);
+  --secondary-color-o-40: var(--color-black-2-o-40, #32312d66);
   --accent-color: var(--color-pink-3, #ff8dcb);
   --highlight-color: var(--color-black-2, #353430);
 
@@ -22,6 +23,7 @@
     --text-color: var(--color-black-2, #353430);
     --title-color: var(--color-pink-4, #ffc2e6);
     --secondary-color: var(--color-black-2, #353430);
+    --secondary-color-o-40: var(--color-black-2-o-40, #32312d66);
     --accent-color: var(--color-pink-3, #ff8dcb);
     --highlight-color: var(--color-black-2, #353430);
 
